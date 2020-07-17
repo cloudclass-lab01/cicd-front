@@ -17,7 +17,7 @@ podTemplate(label: label, containers: [
 
 		// #1 Github 소스 가져오기
 		stage('Get Source') {
-			git credentialsId: 'github-lab01', url: 'https://github.com/cloudclass-lab01/cicd-front.git', brand: 'master'
+			git credentialsId: 'github-lab01', url: 'https://github.com/cloudclass-lab01/cicd-front.git', branch: 'master'
 		}
 
 		// #2 Properties 파일 읽기
